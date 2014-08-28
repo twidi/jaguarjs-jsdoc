@@ -323,7 +323,7 @@ exports.publish = function(taffyData, opts, tutorials) {
                 
                 return {
                     caption: caption || '',
-                    code: code || example
+                    code: htmlsafe(code || example)
                 };
             });
         }
