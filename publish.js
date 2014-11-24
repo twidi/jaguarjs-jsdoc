@@ -203,6 +203,10 @@ function buildNav(members) {
                     kind: 'member',
                     memberof: v.longname
                 }),
+                classes: find({
+                    kind: 'class',
+                    memberof: v.longname
+                }),
                 methods: find({
                     kind: 'function',
                     memberof: v.longname
@@ -229,6 +233,10 @@ function buildNav(members) {
                     kind: 'member',
                     memberof: v.longname
                 }),
+                classes: find({
+                    kind: 'class',
+                    memberof: v.longname
+                }),
                 methods: find({
                     kind: 'function',
                     memberof: v.longname
@@ -253,6 +261,10 @@ function buildNav(members) {
                 name: v.name,
                 members: find({
                     kind: 'member',
+                    memberof: v.longname
+                }),
+                classes: find({
+                    kind: 'class',
                     memberof: v.longname
                 }),
                 methods: find({
