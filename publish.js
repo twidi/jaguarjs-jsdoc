@@ -225,6 +225,7 @@ function buildNav(members) {
 
     if (members.classes.length) {
         _.each(members.classes, function (v) {
+            if (v.ancestors && v.ancestors.length) { return }
             nav.push({
                 type: 'class',
                 longname: v.longname,
