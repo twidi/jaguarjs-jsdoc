@@ -218,6 +218,10 @@ function buildNav(members) {
                 events: find({
                     kind: 'event',
                     memberof: v.longname
+                }),
+                namespaces: find({
+                    kind: 'namespace',
+                    memberof: v.longname
                 })
             });
         });
@@ -249,6 +253,10 @@ function buildNav(members) {
                 events: find({
                     kind: 'event',
                     memberof: v.longname
+                }),
+                namespaces: find({
+                    kind: 'namespace',
+                    memberof: v.longname
                 })
             });
         });
@@ -278,6 +286,10 @@ function buildNav(members) {
                 }),
                 events: find({
                     kind: 'event',
+                    memberof: v.longname
+                }),
+                namespaces: find({
+                    kind: 'namespace',
                     memberof: v.longname
                 })
             });

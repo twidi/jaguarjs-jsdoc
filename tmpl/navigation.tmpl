@@ -89,6 +89,20 @@ var self = this;
             }
             ?>
             </ul>
+            <ul class="namespaces itemMembers">
+            <?js
+            if (item.namespaces.length) {
+            ?>
+            <span class="subtitle">Namespaces</span>
+            <?js
+                item.namespaces.forEach(function (v) {
+            ?>
+                <li data-name="<?js= v.longname ?>"><?js= self.linkto(v.longname, v.name) ?></li>
+            <?js
+                });
+            }
+            ?>
+            </ul>
         </li>
     <?js }); ?>
     </ul>
