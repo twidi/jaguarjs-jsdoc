@@ -75,6 +75,20 @@ var self = this;
             }
             ?>
             </ul>
+            <ul class="mixins itemMembers">
+            <?js
+            if (item.mixins.length) {
+            ?>
+            <span class="subtitle">Mixins</span>
+            <?js
+                item.mixins.forEach(function (v) {
+            ?>
+                <li data-name="<?js= v.longname ?>"><?js= self.linkto(v.longname, v.name) ?></li>
+            <?js
+                });
+            }
+            ?>
+            </ul>
             <ul class="events itemMembers">
             <?js
             if (item.events.length) {

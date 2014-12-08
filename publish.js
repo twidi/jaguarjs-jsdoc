@@ -207,6 +207,10 @@ function buildNav(members) {
                     kind: 'class',
                     memberof: v.longname
                 }),
+                mixins: find({
+                    kind: 'mixin',
+                    memberof: v.longname
+                }),
                 methods: find({
                     kind: 'function',
                     memberof: v.longname
@@ -242,6 +246,10 @@ function buildNav(members) {
                     kind: 'class',
                     memberof: v.longname
                 }),
+                mixins: find({
+                    kind: 'mixin',
+                    memberof: v.longname
+                }),
                 methods: find({
                     kind: 'function',
                     memberof: v.longname
@@ -274,6 +282,10 @@ function buildNav(members) {
                 }),
                 classes: find({
                     kind: 'class',
+                    memberof: v.longname
+                }),
+                mixins: find({
+                    kind: 'mixin',
                     memberof: v.longname
                 }),
                 methods: find({
