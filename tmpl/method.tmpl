@@ -18,7 +18,7 @@ var self = this;
         <?js } ?>
     </div>
 
-    <?js if (data.summary) { ?>
+    <?js if (data.summary && (!data.description || !data.description.length)) { ?>
     <p class="summary"><?js= summary ?></p>
     <?js } ?>
 </dt>
