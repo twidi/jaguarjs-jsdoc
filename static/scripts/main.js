@@ -26,8 +26,10 @@ $(function () {
 
     // Toggle when click an item element
     $('.navigation').on('click', '.title', function (e) {
-        $(this).parent().find('.itemMembers').toggle();
-        e.preventDefault();
+        var lst = $(this).parent().find('li');
+        if (lst.length > 0) {
+            $(this).parent().find('.itemMembers').toggle();
+        }
     });
 
     // Show an item related a current documentation automatically
